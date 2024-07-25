@@ -5,7 +5,7 @@ let explosionGravity;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   colorMode(HSB);
-  gravity = createVector(0, 0.17);  //花火の高さ
+  gravity = createVector(0, 0.17);  // 花火の高さ
   explosionGravity = createVector(0, 0.08); // 爆発後の落下速度
   stroke(255);
   strokeWeight(4);
@@ -40,7 +40,7 @@ class Firework {
     this.hue = random(360);
     this.saturation = random(50, 100);
     this.brightness = random(70, 100);
-    this.firework = new Particle(random(width), height, this.hue, 20, 60, true);  //花火が上がる時
+    this.firework = new Particle(random(width), height, this.hue, 20, 60, true);  // 花火が上がる時
     this.exploded = false;
     this.particles = [];
   }
