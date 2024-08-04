@@ -157,7 +157,7 @@ class Particle {
       strokeWeight(2);
       stroke(this.hue, this.saturation, this.brightness, this.lifespan);
     } else {
-      strokeWeight(4);
+      strokeWeight(2);
       stroke(this.hue, this.saturation, this.brightness);
     }
     
