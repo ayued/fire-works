@@ -3,14 +3,6 @@ let gravity;
 let explosionGravity;
 
 function setup() {
-  let viewport = document.querySelector('meta[name=viewport]');
-  if (!viewport) {
-    viewport = document.createElement('meta');
-    viewport.name = 'viewport';
-    document.head.appendChild(viewport);
-  }
-  viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0');
-
   createCanvas(windowWidth, windowHeight);
   colorMode(HSB);
   gravity = createVector(0, 0.17);  // 花火の高さ
